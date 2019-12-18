@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="statusBarColor">#3C246E</color>
+    <color name="colorBeine">#3C246E</color>
+    <color name="rock">#494967</color>
+</resources>
