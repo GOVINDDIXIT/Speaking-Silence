@@ -1,1 +1,1 @@
-# Sign-Language-Recogniser
+# Sign Language Recogniser
