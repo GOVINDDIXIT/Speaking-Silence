@@ -43,4 +43,8 @@ We have modified and updates the database for better prediction with Indian cond
   </tr>
 </table>
 
+<a href="https://github.com/lukesampson/scoop">
+    <img src="https://img.shields.io/github/repo-size/GOVINDDIXIT/Speaking-Silence.svg" alt="Repository size" />
+</a>
+
 
