@@ -93,7 +93,6 @@ public class CroppingFrameProcessor implements IFrameProcessor {
                     return resizedImage;
 
                 }
-
             }
 
             return inputMat;

@@ -3,6 +3,7 @@
 
 
     <string name="str_button_select">Select</string>
+    <string name="str_button_speak">Speak</string>
     <string name="str_button_reset">Reset</string>
     <string name="str_button_clear">Clear</string>
 
