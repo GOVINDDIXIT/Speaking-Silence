@@ -1,15 +1,12 @@
 package govind.sign_language.activity
 
-import android.graphics.Canvas
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
-import android.view.MotionEvent
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.github.barteksc.pdfviewer.PDFView
-import com.github.barteksc.pdfviewer.listener.*
 import govind.sign_language.R
 
 class SignPdfActivity : AppCompatActivity() {
@@ -36,33 +33,12 @@ class SignPdfActivity : AppCompatActivity() {
                             .enableSwipe(true)//enable the swipe to change page
                             .swipeHorizontal(false)//set horizontal swipe to false
                             .enableDoubletap(true)//double tap to zoom
-                            .onDraw(object: OnDrawListener {
-                                override fun onLayerDrawn(canvas: Canvas, pageWidth:Float, pageHeight:Float, displayedPage:Int) {
-                                }
-                            })
-                            .onDrawAll(object: OnDrawListener {
-                                override fun onLayerDrawn(canvas:Canvas, pageWidth:Float, pageHeight:Float, displayedPage:Int) {
-                                }
-                            })
-                            .onPageError(object: OnPageErrorListener {
-                                override fun onPageError(page:Int, t:Throwable) {
-                                    Toast.makeText(this@SignPdfActivity, "Error", Toast.LENGTH_LONG).show()
-                                }
-                            })
-                            .onPageChange(object: OnPageChangeListener {
-                                override fun onPageChanged(page:Int, pageCount:Int) {
-                                }
-                            })
-                            .onTap(object: OnTapListener {
-                                override fun onTap(e: MotionEvent):Boolean {
-                                    return true
-                                }
-                            })
-                            .onRender(object: OnRenderListener {
-                                override fun onInitiallyRendered(nbPages:Int, pageWidth:Float, pageHeight:Float) {
-                                    pdfView.fitToWidth()
-                                }
-                            })
+                            .onDraw { canvas, pageWidth, pageHeight, displayedPage -> }
+                            .onDrawAll { canvas, pageWidth, pageHeight, displayedPage -> }
+                            .onPageError { page, t -> Toast.makeText(this@SignPdfActivity, "Error", Toast.LENGTH_LONG).show() }
+                            .onPageChange { page, pageCount -> }
+                            .onTap { true }
+                            .onRender { nbPages, pageWidth, pageHeight -> pdfView.fitToWidth() }
                             .enableAnnotationRendering(true)
                             .invalidPageColor(Color.WHITE)
                             .load()

@@ -45,6 +45,17 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="backgroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="1" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
@@ -61,7 +72,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="C:\Users\govin\Downloads\asdasd (1).png" />
+                                      <entry key="foregroundImage" value="C:\Users\govin\Desktop\Speaking Silence\app\sign-language-master\app\src\main\res\drawable\logo.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -48,6 +48,4 @@ public interface IFrame {
 
     Mat getHogDesc();
     void setHogDesc(Mat hogDesc);
-
-
 }

@@ -30,7 +30,7 @@ public class ColourThresholdFrameProcessor implements IFrameProcessor {
     private Mat mErodedMask = new Mat();
     private Mat mBlurredMask = new Mat();
 
-    public ColourThresholdFrameProcessor(DetectionMethod inputDetectionMethod){
+    public ColourThresholdFrameProcessor(DetectionMethod inputDetectionMethod) {
         skinColourProfile = SkinColourProfile.getInstance();
         detectionMethod = inputDetectionMethod;
     }
@@ -53,7 +53,7 @@ public class ColourThresholdFrameProcessor implements IFrameProcessor {
         Imgproc.dilate(mErodedMask, mDilatedMask, new Mat());
 
         // Gauss Blur
-        Imgproc.GaussianBlur(mDilatedMask, mBlurredMask, new Size(1,1),0);
+        Imgproc.GaussianBlur(mDilatedMask, mBlurredMask, new Size(1, 1), 0);
 
         Imgproc.findContours(mBlurredMask, tempContours, mHierarchy, Imgproc.RETR_CCOMP, Imgproc.CHAIN_APPROX_SIMPLE);
 
@@ -78,9 +78,9 @@ public class ColourThresholdFrameProcessor implements IFrameProcessor {
             }
 
             // Add child contours of the largest contour
-            for (int i = 0; i < mHierarchy.cols(); i++){
-                if (mHierarchy.get(0,i)[3] == maxContourIdx){
-                    if (Imgproc.contourArea(tempContours.get(i)) > minChildContourAreaMod * maxArea){
+            for (int i = 0; i < mHierarchy.cols(); i++) {
+                if (mHierarchy.get(0, i)[3] == maxContourIdx) {
+                    if (Imgproc.contourArea(tempContours.get(i)) > minChildContourAreaMod * maxArea) {
                         outerContours.add(tempContours.get(i));
                     }
                 }
@@ -93,7 +93,7 @@ public class ColourThresholdFrameProcessor implements IFrameProcessor {
 
     }
 
-    private void clearContours(){
+    private void clearContours() {
         tempContours.clear();
         outerContours.clear();
     }
