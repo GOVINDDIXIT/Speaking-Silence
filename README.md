@@ -9,6 +9,7 @@
 - Govind Dixit (Team Leader)
 - Swastik Singh
 - Dushyant Singh
+- Rohit Verma
 
 **Database Creation**
 
