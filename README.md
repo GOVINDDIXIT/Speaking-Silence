@@ -1,5 +1,5 @@
 # Speaking Silence: A Sign Language Recogniser
-## *Solution for Build for Digital India*
+## *Solution for Developer Student Clubs Solution Challenge 2020*
 
 **Android App:** http://bit.ly/speakingsilenceapp 
 
