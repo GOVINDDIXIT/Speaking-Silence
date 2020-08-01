@@ -1,5 +1,7 @@
 # Speaking Silence: A Sign Language Recogniser
-## *Solution for Developer Student Clubs Solution Challenge 2020*
+## *Solution for Build for Digital India 2020*
+
+**Verdict:** _Seleced as one of 19 team invited to pitch this project at Google Gurugram_
 
 **Android App:** http://bit.ly/speakingsilenceapp 
 
