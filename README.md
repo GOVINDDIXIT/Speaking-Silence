@@ -1,7 +1,7 @@
 # Speaking Silence: A Sign Language Recogniser
 ## *Solution for Build for Digital India 2020*
 
-**Verdict:** _Seleced as one of 19 team invited to pitch this project at Google Gurugram_
+**Verdict:** _Seleced as one of 19 team invited to pitch their project at Google Gurugram_
 
 **Android App:** http://bit.ly/speakingsilenceapp 
 
@@ -11,7 +11,6 @@
 - Govind Dixit (Team Leader)
 - Swastik Singh
 - Dushyant Singh
-- Rohit Verma
 
 **Database Creation**
 
